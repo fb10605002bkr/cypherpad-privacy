@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CypherPad - Gizlilik Politikası / Privacy Policy</title>
+  <meta name="description" content="CypherPad Android Uygulaması Gizlilik Politikası ve Veri İşleme Bildirimi (Privacy Policy)">
+  <style>
+    :root {
+      --bg-primary: #0a0f1d;
+      --bg-surface: #111827;
+      --bg-surface-elevated: #1f2937;
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      --accent-teal: #10b981;
+      --accent-teal-soft: rgba(16, 185, 129, 0.12);
+      --accent-blue: #3b82f6;
+      --accent-warning: #f59e0b;
+      --accent-warning-soft: rgba(245, 158, 11, 0.12);
+      --border-color: #374151;
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-stack);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-teal-soft);
+      color: var(--accent-teal);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+
+    .meta-info {
+      font-size: 13px;
+      color: var(--text-secondary);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .meta-info span strong {
+      color: var(--text-primary);
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      margin: 24px 0 32px 0;
+      background: var(--bg-surface-elevated);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      width: fit-content;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--accent-teal);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+    }
+
+    .lang-btn:hover:not(.active) {
+      color: var(--text-primary);
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-left: 3px solid var(--accent-teal);
+      padding-left: 10px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #e5e7eb;
+      margin: 16px 0 8px 0;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    ul, ol {
+      color: var(--text-secondary);
+      font-size: 14px;
+      padding-left: 24px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--text-primary);
+    }
+
+    code {
+      background: rgba(255, 255, 255, 0.08);
+      color: #e2e8f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: monospace;
+    }
+
+    .callout {
+      background: var(--bg-surface-elevated);
+      border-left: 4px solid var(--accent-teal);
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .callout-warning {
+      border-left-color: var(--accent-warning);
+      background: var(--accent-warning-soft);
+      color: #fef3c7;
+    }
+
+    .callout-warning strong {
+      color: #fbbf24;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 16px 0;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    td {
+      color: var(--text-secondary);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent-teal);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Print / Responsive */
+    @media (max-width: 640px) {
+      .container {
+        padding: 20px 16px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .meta-info {
+        flex-direction: column;
+        gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="app-badge">Sıfır Ağ Mimarisi / Zero-Network Architecture</div>
+      <h1>CypherPad Gizlilik Politikası</h1>
+      <div class="meta-info">
+        <span><strong>Uygulama:</strong> CypherPad</span>
+        <span><strong>Paket Adı:</strong> <code>com.diyalango.cypherpad</code></span>
+        <span><strong>Geliştirici:</strong> Diyalango — Fırat Bakır</span>
+        <span><strong>İletişim:</strong> <a href="mailto:fb10605002@gmail.com" style="color:var(--accent-teal); text-decoration:none;">fb10605002@gmail.com</a></span>
+        <span><strong>Son Güncelleme:</strong> 6 Ekim 2026</span>
+      </div>
+    </header>
+
+    <!-- Language Selector -->
+    <div class="lang-switcher" role="tablist" aria-label="Dil Seçimi / Language Selection">
+      <button class="lang-btn active" id="btn-tr" onclick="showLang('tr')" role="tab" aria-selected="true">Türkçe</button>
+      <button class="lang-btn" id="btn-en" onclick="showLang('en')" role="tab" aria-selected="false">English</button>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TÜRKÇE BÖLÜM -->
+    <!-- ======================================================== -->
+    <div id="content-tr" lang="tr">
+      <section>
+        <h2>1. Giriş ve Temel İlke</h2>
+        <p>
+          CypherPad, kullanıcı mahremiyetini ve güvenliğini merkeze alarak tasarlanmış bağımsız bir şifreli mesajlaşma ve not alma aracıdır.
+          Uygulama, geleneksel anlık mesajlaşma programlarının aksine merkezi sunuculara dayanmaz; <strong>"Sıfır Ağ Mimarisi" (Zero-Network)</strong> ile çalışır.
+        </p>
+        <p>
+          CypherPad geliştiricisi (Diyalango — Fırat Bakır) olarak hiçbir kullanıcımızın kişisel verisini, mesaj içeriğini, şifreleme anahtarını veya cihaz kimliğini <strong>toplamaz, kaydetmez, iletmez veya üçüncü taraflarla paylaşmayız</strong>.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Kullanıcı Hesabı ve Kayıt Gereksinimi</h2>
+        <p>
+          CypherPad kullanmak için herhangi bir hesap açmanız, e-posta adresi vermeniz, telefon numarası kaydetmeniz veya profil oluşturmanız <strong>gerekmez</strong>:
+        </p>
+        <ul>
+          <li><strong>Hesap ve Kayıt Yok:</strong> Uygulamada kullanıcı hesabı oluşturma, uzaktan oturum açma veya kimlik doğrulama altyapısı bulunmaz.</li>
+          <li><strong>Yerel Güvenlik PIN'i:</strong> Uygulama erişimi, yalnızca cihazınızda yerel olarak belirlenen 6 haneli güvenlik PIN'i ile denetlenir. Belirlediğiniz PIN veya tuz değerleri (salt) hiçbir uzak sunucuya gönderilmez; yalnızca yerel şifreli kasanın anahtarını türetmek amacıyla cihazda işlenir.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Veri İşleme, Kriptografi ve Sunucusuz Tasarım</h2>
+        <p>
+          Uygulama içindeki tüm işlemler tamamen cihazınızın yerel işlemci ve bellek kaynakları üzerinde gerçekleştirilir:
+        </p>
+        <ul>
+          <li><strong>Cihaz Üzerinde Şifreleme:</strong> Tüm şifreleme ve deşifreleme işlemleri (AES-256-GCM, HKDF-SHA-256, Double Ratchet ve Private Cypher Domain algoritmaları) doğrudan cihazınızda çalışır.</li>
+          <li><strong>Geliştirici Sunucusu Yoktur:</strong> Uygulamanın geliştiriciye ait herhangi bir veritabanı, bulut sunucusu veya API uç noktası bulunmamaktadır.</li>
+          <li><strong>Ağ Erişimi Engellidir:</strong> Uygulamanın Android manifestinde (<code>AndroidManifest.xml</code>) internet izni (<code>android.permission.INTERNET</code>) <strong>bulunmamaktadır</strong>. İşletim sistemi düzeyinde uygulamanın harici ağ bağlantısı kurması engellenmiştir.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Reklam, Analiz ve Üçüncü Taraf SDK'lar</h2>
+        <p>
+          CypherPad hiçbir üçüncü taraf izleme veya reklam servisi barındırmaz:
+        </p>
+        <ul>
+          <li><strong>Reklam SDK'sı Yoktur:</strong> Uygulama reklam içermez; Google AdMob, Unity Ads vb. hiçbir reklam SDK'sı kod tabanında yer almaz.</li>
+          <li><strong>Analitik ve Takip Yoktur:</strong> Google Analytics, Firebase Analytics, Mixpanel, Amplitude gibi kullanım takip kütüphaneleri bulunmaz.</li>
+          <li><strong>Kaza / Hata Raporlama Yoktur:</strong> Firebase Crashlytics veya Sentry gibi cihaz ve kaza bilgilerini toplayan araçlar entegre edilmemiştir.</li>
+          <li><strong>Yalnızca Çekirdek Kütüphaneler:</strong> Kod tabanında yalnızca Google AndroidX çekirdek kütüphaneleri (<code>core-ktx</code>, <code>lifecycle</code>, <code>webkit</code>) yer almaktadır.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Mesaj Gönderimi, Pano ve Harici Paylaşım</h2>
+        <p>
+          CypherPad mesajları kendisi iletmez; iletişim kullanıcının manuel eylemleri üzerinden yürütülür:
+        </p>
+        <ul>
+          <li><strong>Pano ve Paylaşım Menüsü:</strong> Üretilen şifreli mesaj paketleri (zırhlı metin) ve <code>.cypher</code> kod defterleri, kullanıcının talebiyle sistem panosuna kopyalanır veya standart Android Paylaşım Menüsü (Sharesheet) aracılığıyla dışa aktarılır.</li>
+          <li><strong>Taşıyıcı Uygulamalar:</strong> Şifreli metinleri veya dosyaları hangi kanal (WhatsApp, Signal, Telegram, E-posta, SMS, Bluetooth vb.) üzerinden ileteceğiniz tamamen sizin tercihinizdir.</li>
+          <li><strong>Harici Servislerin Gizlilik Politikaları:</strong> Şifreli yükleri taşıdığınız üçüncü taraf platformlar (mesajlaşma uygulamaları, e-posta sağlayıcıları vb.), kendi gizlilik politikalarına ve kullanım koşullarına tabidir. Bu servislerin tuttuğu ağ meta verileri (IP adresleri, aktarım zamanları, dosya boyutları vb.) CypherPad'in denetimi veya sorumluluğu altında değildir.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Okundu Bilgisi (READ-ACK) Mekanizması</h2>
+        <p>
+          CypherPad V4.1.2 protokolü, karşı tarafın önceki şifreli mesajı çözüp görüntülediğini doğrulamak için "Single Outstanding Message" (SOM) onay kuralı işletir.
+        </p>
+        <ul>
+          <li><strong>Nasıl Çalışır?:</strong> Okundu onayı arka planda sunucular üzerinden otomatik iletilen bir telemetri verisi <em>değildir</em>. Alıcı kullanıcı mesajı görüntüledikten sonra, ya bir sonraki şifreli cevap mesajının içine gömülü olarak (Piggybacked ACK) ya da alıcının "Okundu Doğrulama Kodu" butonuna dokunup ürettiği bağımsız şifreli onay paketini harici mesajlaşma kanalıyla karşı tarafa manuel göndermesiyle iletilir.</li>
+          <li><strong>İletilen Bilgiler:</strong> READ-ACK paketi yalnızca mesaj sıra numarası (<code>origSeq</code>), mesaj UUID'si (<code>origMsgId</code>), yön bayrakları ve ortak defter anahtarından türetilen 32 baytlık HMAC-SHA-256 doğrulama imzasını içerir.</li>
+          <li><strong>İletilmeyen Bilgiler:</strong> Okunma zamanı, IP adresi, cihaz modeli, kullanıcı kimliği veya coğrafi konum bilgisi <strong>kesinlikle iletilmez</strong>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Cihaz İzinleri</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>İzin</th>
+                <th>Kullanım Amacı</th>
+                <th>Veri Toplama Durumu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>android.permission.VIBRATE</code></td>
+                <td>PIN tuşlamalarında, kilit açma/kapama eylemlerinde ve kritik uyarılarda dokunsal geri bildirim (haptic feedback) sağlamak.</td>
+                <td>Veri toplamaz.</td>
+              </tr>
+              <tr>
+                <td><code>INTERNET</code> (Kullanılmaz)</td>
+                <td>Uygulama bildiriminde internet izni bulunmaz; ağ erişimi işletim sistemi seviyesinde fiziksel olarak engellenmiştir.</td>
+                <td>Ağ iletişimi yoktur.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>8. Verilerin Saklanması, Silinmesi ve Sınırlar</h2>
+        <p>
+          Uygulama, yerel verilerinizi korumak için çok katmanlı savunma önlemleri sunar:
+        </p>
+        <ul>
+          <li><strong>Yerel Şifreli Kasa:</strong> Sohbet ve defter verileri, cihazınızın yerel depolama alanında düz metin olarak değil; Safe PIN'iniz ile PBKDF2 (100.000 iterasyon) üzerinden türetilen anahtarla AES-256-GCM algoritmasıyla şifrelenmiş olarak saklanır.</li>
+          <li><strong>Sohbet Silme:</strong> Uygulama içinden bir sohbeti sildiğinizde, o sohbete ait anahtarlar ve mesaj kayıtları yerel kasadan kalıcı olarak çıkartılır.</li>
+          <li><strong>Pano Otomatik Temizleme:</strong> Kopyalanan şifreli metinler ve parolalar, casus pano dinleyicilere karşı 60 saniye sonra sistem panosundan otomatik olarak temizlenmeye çalışılır; Android 13+ üzerinde hassas pano önizleme gizlemesi (<code>EXTRA_IS_SENSITIVE</code>) uygulanır.</li>
+          <li><strong>Ekran Güvenliği:</strong> <code>FLAG_SECURE</code> bayrağı ile ekran görüntüsü alma, ekran kaydı ve son uygulamalar önizlemesi engellenir.</li>
+          <li><strong>Acil Durum İmhası (Emergency Nuke):</strong> Kullanıcı arayüzden imha başlattığında veya tehdit altında önceden belirlenen Tehdit PIN'i (Duress PIN) girildiğinde bellek (RAM) ve web depolama alanları çok geçişli rastgele baytlarla ezilir; yerel disk dosyaları parçalanarak silinir.</li>
+        </ul>
+
+        <div class="callout callout-warning">
+          <strong>Önemli Güvenlik Sınırları ve Açık Beyanlar:</strong>
+          <ul style="margin-top:8px; margin-bottom:0;">
+            <li><strong>Fiziksel Bellek ve Aşınma Dengeleme (Wear-Leveling):</strong> Modern akıllı telefonların flash depolama donanımları (FTL, wear-leveling, blok yeniden eşleme) ve işletim sistemi önbellekleri nedeniyle, hiçbir yazılım modern flash yongalar üzerinde %100 "adli bilişime karşı geri getirilemez silme" garantisi veremez. CypherPad'in çok geçişli ezme protokolü elden gelen en ileri düzeyde (best-effort) güvenlik önlemidir.</li>
+            <li><strong>Donanım Destekli Anahtarlar:</strong> Android Keystore donanım tabanlı izolasyon yetenekleri (TEE / StrongBox), kullanılan cihazın marka, model ve yonga seti desteğine bağlıdır. Donanım desteği bulunmayan cihazlarda anahtarlar işletim sistemi korumalı yazılımsal alanda tutulur; bu nedenle her cihazda donanım garantisi verilemez.</li>
+            <li><strong>Android Yedekleme Politikası:</strong> Uygulama manifestinde <code>android:allowBackup="false"</code> tanımlanarak standart Google Drive bulut yedeklemeleri devre dışı bırakılmıştır. Bununla birlikte, cihaz düzeyinde fiziksel yedekleme, tam disk klonlama veya kök erişimli (root/adb) yedekleme araçları uygulamanın denetimi dışındadır.</li>
+            <li><strong>Dışa Aktarılan Dosyaların Silinmesi:</strong> Kullanıcının cihazın <code>Downloads</code> klasörüne kaydettiği <code>.cypher</code> defter dosyaları veya mesajlaşma uygulamaları üzerinden gönderdiği kopyalar CypherPad'in kontrolü dışındadır. Bu kopyaların kullanıcı tarafından ilgili klasörlerden ve taşıyıcı uygulamalardan <strong>ayrıca manuel olarak silinmesi gerekmektedir</strong>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>9. Çocukların Gizliliği</h2>
+        <p>
+          CypherPad genel kullanıma açık bir kriptografik güvenlik aracıdır. Uygulama hiçbir yaş grubundan kullanıcı verisi toplamadığı gibi 13 yaşın (veya ilgili yargı alanındaki reşit olma yaşının) altındaki çocuklardan da hiçbir kişisel veri toplamaz.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. İletişim ve Değişiklikler</h2>
+        <p>
+          Bu gizlilik politikasında yapılabilecek olası güncellemeler bu sayfa üzerinden yayımlanacaktır. Politikaya veya uygulamanın veri işleme biçimine ilişkin sorularınız için doğrudan geliştiriciyle iletişime geçebilirsiniz:
+        </p>
+        <p>
+          <strong>Geliştirici:</strong> Diyalango — Fırat Bakır<br>
+          <strong>E-posta:</strong> <a href="mailto:fb10605002@gmail.com" style="color:var(--accent-teal);">fb10605002@gmail.com</a>
+        </p>
+      </section>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- ENGLISH SECTION -->
+    <!-- ======================================================== -->
+    <div id="content-en" lang="en" style="display:none;">
+      <section>
+        <h2>1. Introduction & Core Principle</h2>
+        <p>
+          CypherPad is an independent, encrypted messaging and note-taking utility engineered with user privacy and security at its core.
+          Unlike conventional instant messaging platforms, CypherPad does not rely on centralized infrastructure; it operates under a strict <strong>Zero-Network Architecture</strong>.
+        </p>
+        <p>
+          As the developer of CypherPad (Diyalango — Fırat Bakır), we <strong>do not collect, record, transmit, store on servers, or share with third parties</strong> any personal data, message contents, cryptographic keys, or device identifiers.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. No User Account or Registration Required</h2>
+        <p>
+          Using CypherPad does not require an account, email address, phone number, or profile registration:
+        </p>
+        <ul>
+          <li><strong>No Accounts:</strong> The application lacks any infrastructure for user accounts, cloud sign-in, or remote authentication.</li>
+          <li><strong>Local Security PIN:</strong> Access control is governed entirely on-device via a user-defined 6-digit PIN. Your PIN, hashes, and salts are never transmitted to any remote server; they are processed locally solely to derive the master decryption key for your local vault.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Data Processing, Cryptography & Serverless Design</h2>
+        <p>
+          All operations occur strictly within your local device processor and memory:
+        </p>
+        <ul>
+          <li><strong>Strictly On-Device Cryptography:</strong> All cryptographic functions (AES-256-GCM, HKDF-SHA-256, Double Ratchet, and Private Cypher Domain transforms) execute locally on your device.</li>
+          <li><strong>No Developer Servers:</strong> CypherPad maintains no backend servers, cloud databases, or developer API endpoints.</li>
+          <li><strong>No Internet Permission:</strong> The application manifest (<code>AndroidManifest.xml</code>) intentionally omits the <code>android.permission.INTERNET</code> permission. Android OS physically forbids the application from establishing outbound or inbound network connections.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Advertising, Analytics & Third-Party SDKs</h2>
+        <p>
+          CypherPad does not integrate any third-party tracking, profiling, or monetization libraries:
+        </p>
+        <ul>
+          <li><strong>No Advertising SDKs:</strong> No ads are served; Google AdMob, Unity Ads, and similar ad SDKs are not present in the codebase.</li>
+          <li><strong>No Analytics SDKs:</strong> No user telemetry libraries (e.g., Google Analytics, Firebase Analytics, Mixpanel, Amplitude) are included.</li>
+          <li><strong>No Crash Reporting SDKs:</strong> No diagnostic logging services (e.g., Firebase Crashlytics, Sentry) are embedded.</li>
+          <li><strong>Core Libraries Only:</strong> The application depends solely on official Google AndroidX framework libraries (<code>core-ktx</code>, <code>lifecycle</code>, <code>webkit</code>).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Message Dispatch, Clipboard & External Sharing</h2>
+        <p>
+          CypherPad does not transmit messages directly; communication is handled through intentional user action:
+        </p>
+        <ul>
+          <li><strong>Clipboard & System Sharesheet:</strong> Encrypted message payloads (armored ciphertext) and <code>.cypher</code> codebooks are copied to the system clipboard or exported via the standard Android Sharesheet upon explicit user command.</li>
+          <li><strong>Carrier Applications:</strong> You decide which external medium (WhatsApp, Signal, Telegram, SMS, Email, Bluetooth, etc.) you use to exchange encrypted payloads with your peers.</li>
+          <li><strong>Third-Party Privacy Terms:</strong> Any third-party platform used to transport encrypted payloads is governed by its own privacy policy and terms of service. Metadata generated by those carriers (IP addresses, transmission timestamps, packet sizes) is outside CypherPad’s domain and responsibility.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Verified Read Acknowledgement (READ-ACK)</h2>
+        <p>
+          The CypherPad V4.1.2 protocol enforces a "Single Outstanding Message" (SOM) rule to guarantee verified communication before subsequent outbound messages can be composed.
+        </p>
+        <ul>
+          <li><strong>How It Works:</strong> Read receipts are not automated background server signals. When a recipient views a message, the confirmation is either embedded within their next encrypted reply (Piggybacked ACK) or manually generated via the "Create Read Verification Code" button and shared by the user through their chosen transport channel.</li>
+          <li><strong>Data Transmitted:</strong> The READ-ACK payload carries only cryptographic parameters: original sequence number (<code>origSeq</code>), message UUID (<code>origMsgId</code>), directional flags, and a 32-byte HMAC-SHA-256 token derived from the shared secret.</li>
+          <li><strong>Data Not Transmitted:</strong> No timestamps, IP addresses, device models, user identities, or location data are ever included.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Device Permissions</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+                <th>Data Collection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>android.permission.VIBRATE</code></td>
+                <td>Provides tactile haptic feedback during PIN keypad interactions, authentication states, and alert triggers.</td>
+                <td>None.</td>
+              </tr>
+              <tr>
+                <td><code>INTERNET</code> (Not Requested)</td>
+                <td>Intentionally omitted; outbound network communication is physically disabled by the Android OS.</td>
+                <td>None.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>8. Data Storage, Deletion & Technical Limits</h2>
+        <p>
+          CypherPad applies multi-layered defenses to safeguard your local data:
+        </p>
+        <ul>
+          <li><strong>Encrypted Local Vault:</strong> All chats and codebooks are stored locally inside an AES-256-GCM encrypted vault derived from your Safe PIN using PBKDF2 (100,000 iterations). Plaintext is never written to disk.</li>
+          <li><strong>Chat Deletion:</strong> Removing a chat from within the app purges the corresponding cryptographic state and message history from the encrypted vault.</li>
+          <li><strong>Automated Clipboard Scrubbing:</strong> Copied ciphertext and passphrases trigger an automatic 60-second system clipboard purge; on Android 13+, sensitive clipboard previews (<code>EXTRA_IS_SENSITIVE</code>) are masked against shoulder-surfing.</li>
+          <li><strong>Display Protection:</strong> <code>FLAG_SECURE</code> blocks screenshots, screen recorders, and task-switcher previews.</li>
+          <li><strong>Emergency Nuke Protocol:</strong> Triggered via the UI or by entering a designated Duress PIN under coercion, memory objects are zeroed and local disk/web storage files undergo multi-pass pseudo-random shredding.</li>
+        </ul>
+
+        <div class="callout callout-warning">
+          <strong>Important Security Disclaimers & Technical Limitations:</strong>
+          <ul style="margin-top:8px; margin-bottom:0;">
+            <li><strong>Flash Storage & Wear-Leveling:</strong> Due to modern NAND flash storage architectures (FTL wear-leveling, block re-mapping, OS caches), no software can guarantee 100% irreversible forensic destruction on all solid-state mobile hardware. Multi-pass shredding is a best-effort defense-in-depth mitigation.</li>
+            <li><strong>Hardware-Backed Keystore Availability:</strong> Android Keystore hardware isolation (TEE / StrongBox) depends on physical device chipset support. On devices lacking hardware TEE backing, keys reside in OS-protected software memory; universal hardware backing cannot be guaranteed across all devices.</li>
+            <li><strong>Backup Settings:</strong> The release manifest enforces <code>android:allowBackup="false"</code> to block automated Google Drive cloud backups. However, full physical device imaging, root-level backups (e.g., adb root), or OS-level device transfers cannot be controlled by the application.</li>
+            <li><strong>Separate Deletion of Exported Artifacts:</strong> Files saved to the device's <code>Downloads</code> directory (e.g., <code>.cypher</code> codebooks) and copies sent across third-party communication apps remain under the jurisdiction of the file system and those apps. <strong>Users must delete external files and message histories separately.</strong></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>9. Children's Privacy</h2>
+        <p>
+          CypherPad is a general-purpose security utility. Because it operates entirely offline without telemetry or account registration, it does not collect personal information from any user, including children under the age of 13 (or applicable age in your jurisdiction).
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Contact & Inquiries</h2>
+        <p>
+          Any revisions to this Privacy Policy will be posted to this page. If you have questions regarding this policy or our offline architecture, please contact:
+        </p>
+        <p>
+          <strong>Developer:</strong> Diyalango — Fırat Bakır<br>
+          <strong>Email:</strong> <a href="mailto:fb10605002@gmail.com" style="color:var(--accent-teal);">fb10605002@gmail.com</a>
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Diyalango — Fırat Bakır. CypherPad (<code>com.diyalango.cypherpad</code>).</p>
+      <p style="margin-top:4px;">Tüm hakları saklıdır. Bu sayfa harici izleyici, çerez veya üçüncü taraf betik içermeyen statik bir belgedir.</p>
+    </footer>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      const contentTr = document.getElementById('content-tr');
+      const contentEn = document.getElementById('content-en');
+      const btnTr = document.getElementById('btn-tr');
+      const btnEn = document.getElementById('btn-en');
+
+      if (lang === 'tr') {
+        contentTr.style.display = 'block';
+        contentEn.style.display = 'none';
+        btnTr.classList.add('active');
+        btnTr.setAttribute('aria-selected', 'true');
+        btnEn.classList.remove('active');
+        btnEn.setAttribute('aria-selected', 'false');
+        document.documentElement.lang = 'tr';
+      } else {
+        contentTr.style.display = 'none';
+        contentEn.style.display = 'block';
+        btnEn.classList.add('active');
+        btnEn.setAttribute('aria-selected', 'true');
+        btnTr.classList.remove('active');
+        btnTr.setAttribute('aria-selected', 'false');
+        document.documentElement.lang = 'en';
+      }
+    }
+  </script>
+</body>
+</html>
